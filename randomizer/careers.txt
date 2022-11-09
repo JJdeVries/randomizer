@@ -1,0 +1,56 @@
+Astronaut – Space Ranger	base game
+Astronaut – Interstellar Smuggler	base game
+Athlete – Professional Athlete	base game
+Athlete – Bodybuilder	base game
+Business – Management	base game
+Business – Investor	base game
+Criminal – Boss	base game
+Criminal – Oracle	base game
+Culinary – Chef	base game
+Culinary – Mixologist	base game
+Entertainer – Musician	base game
+Entertainer – Comedian	base game
+Painter – Master of the Real	base game
+Painter – Patron of the Arts	base game
+Secret Agent – Diamond Agent	base game
+Secret Agent – Villain	base game
+Tech Guru – eSport Gamer	base game
+Tech Guru – Start-up Entrepreneur	base game
+Writer – Author	base game
+Writer – Journalist	base game
+Babysitter	base game
+Barista	base game
+Fast Food Employee	base game
+Manual Laborer	base game
+Retail Employee	base game
+Critic – Arts Critic	City Living
+Critic – Food Critic	City Living
+Politician – Politician	City Living
+Politician – Charity Organizer	City Living
+Social Media – Internet Personality	City Living
+Social Media – Public Relations	City Living
+Education – Administrator	Discover University
+Education – Professor	Discover University
+Engineer – Computer Engineer	Discover University
+Engineer – Mechanical Engineer	Discover University
+Law – Judge	Discover University
+Law – Private Attorney	Discover University
+Civil Designer – Civic Planner	Eco Lifestyle
+Civil Designer – Green Technician	Eco Lifestyle
+Actor/Actress	Get Famous
+Detective	Get to Work
+Doctor	Get to Work
+Scientist	Get to Work
+Conservationist – Environmental	Island Living
+Manager	Island Living
+Conservationist – Marine Biologist	Island Living
+Diver	Island Living
+Fisherman	Island Living
+Lifeguard	Island Living
+Style influencer – Stylist	Patch 73
+Style influencer – Trend Setter	Patch 74
+Freelancer	Patch 79
+Gardener – Botanist	Seasons
+Gardener – Floral Designer	Seasons
+Military – Covert Operator	StrangerVille
+Military – Officer	StrangerVille
