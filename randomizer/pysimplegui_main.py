@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-from typing import List
-import PySimpleGUI as sg
-
-from pathlib import Path
-
 import random
+from pathlib import Path
+from typing import List
+
+import PySimpleGUI as sg
 
 
 def pick(options: List[str]) -> str:
