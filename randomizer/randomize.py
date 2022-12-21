@@ -1,12 +1,31 @@
-from pathlib import Path
+import enum
 import random
+from pathlib import Path
 
-_OPTIONS: dict[str, list[str]] = {"careers": [], "skills": [], "aspirations": []}
+
+class Types(str, enum.Enum):
+    Trait = "trait"
+    Career = "career"
+    Aspiration = "aspiration"
+    Skill = "skill"
+
+
+_OPTIONS: dict[Types, list[str]] = {
+    Types.Trait: [],
+    Types.Career: [],
+    Types.Aspiration: [],
+    Types.Skill: [],
+}
 
 
 def initialize():
     global _OPTIONS
-    files = {"skills": "skills.txt"}
+    files = {
+        Types.Skill: "skills.txt",
+        Types.Trait: "traits.txt",
+        Types.Career: "careers.txt",
+        Types.Aspiration: "aspirations.txt",
+    }
 
     for output, filename in files.items():
         with open(Path(__file__).parent.resolve() / filename) as f:
@@ -21,13 +40,5 @@ def __pick(options: list[str]) -> str:
     return options[randint].strip()
 
 
-def get_skill() -> str:
-    return __pick(_OPTIONS["skills"])
-
-
-def get_aspiration() -> str:
-    return __pick(_OPTIONS["aspirations"])
-
-
-def get_career() -> str:
-    return __pick(_OPTIONS["careers"])
+def get(random_type: Types) -> str:
+    return __pick(_OPTIONS[random_type])

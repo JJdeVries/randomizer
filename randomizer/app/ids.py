@@ -12,9 +12,17 @@ class GenerateId(_BaseDashId):
 
     Generate = "-generate-"
 
+    OutputButton = "-output-button-"
+    OutputTooltip = "-output-tooltip-"
+
     TraitsOutput = "-traits-output-"
     TraitsDropdown = "-traits-dropdown-"
-    TraitsOutputButton = "-traits-output-button-"
+
+    CareersOutput = "-careers-output-"
+    CareersDropdown = "-careers-dropdown-"
 
     AspirationsOutput = "-aspirations-output-"
     AspirationsDropdown = "-aspirations-dropdown-"
+
+    SkillsOutput = "-skills-output-"
+    SkillsDropdown = "-skills-dropdown-"

@@ -9,17 +9,13 @@ application logic, nor any adapters.
 import dash_bootstrap_components as dbc
 from dash import Dash
 
-from .layout import get_layout
 from . import callbacks
+from .layout import get_layout
 
 
 def run_blocking() -> None:
     """Run the dash application."""
-    app = Dash(
-        __name__,
-        external_stylesheets=[dbc.themes.BOOTSTRAP],
-        prevent_initial_callbacks=True,
-    )
+    app = Dash(__name__, prevent_initial_callbacks=True)
 
     app.layout = get_layout()
 

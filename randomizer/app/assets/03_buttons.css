@@ -1,0 +1,47 @@
+.btn {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+
+  &:hover {
+      color: #fff;
+      background-color: var(--bs-primary);
+      border-color: var(--bs-primary);
+  }
+}
+.btn-outline-secondary {
+  color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+
+  &:hover {
+      color: #fff;
+      background-color: var(--bs-secondary);
+      border-color: var(--bs-secondary);
+  }
+}
+
+.btn-primary {
+    border-color: var(--bs-primary);
+    background-color: var(--bs-primary);
+
+    &:hover {
+        border-color: var(--bs-primary);
+        background-color: var(--bs-primary);
+    }
+
+    &:active {
+        border-color: var(--bs-primary);
+        background-color: var(--bs-primary);
+    }
+
+    &:focus {
+        border-color: var(--bs-primary);
+        background-color: var(--bs-primary);
+    }
+}

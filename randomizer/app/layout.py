@@ -4,7 +4,7 @@ from dash import dcc, html
 
 from .ids import GenerateId
 
-_TYPES = ["traits", "aspirations"]
+_TYPES = ["traits", "careers", "aspirations", "skills"]
 
 
 def _get_dropdown_id(gen_type: str) -> GenerateId:
@@ -37,19 +37,7 @@ def _get_new_row(row_type: str) -> dbc.Row:
             dbc.Col(
                 [
                     dbc.Container(
-                        [
-                            dbc.Row(
-                                children=[
-                                    dbc.Col(
-                                        dbc.Input(
-                                            readonly=True, placeholder="", type="text"
-                                        ),
-                                    ),
-                                ],
-                                id=_get_output_id(row_type),
-                            )
-                        ],
-                        fluid=True,
+                        [dbc.Row(children=[], id=_get_output_id(row_type))], fluid=True
                     )
                 ]
             ),
@@ -81,7 +69,10 @@ def get_layout() -> html.Div:
                                         "color": "white",
                                         "fontSize": "45px",
                                         "backgroundColor": "#4b7a34",
+                                        "boxShadow": "none",
+                                        "borderRadius": "0",
                                     },
+                                    color="primary",
                                 )
                             ],
                             class_name="d-grid gap-2",
@@ -92,19 +83,19 @@ def get_layout() -> html.Div:
                             [
                                 dbc.Container(
                                     [_get_new_row(i) for i in _TYPES]
-                                    + [
-                                        dbc.Row(dbc.Col(html.Br())),
-                                        dbc.Row(dbc.Col(html.Br())),
-                                    ],
+                                    + [dbc.Row(dbc.Col(html.Br()))],
                                     style={"margin": "1.5em"},
                                     fluid=True,
-                                ),
+                                )
                             ]
-                        ),
+                        )
                     ),
                 ],
-                style={"backgroundColor": "white"},
+                style={
+                    "backgroundColor": "white",
+                },
                 className="g-0",
             ),
         ],
+        className="bg-primary",
     )
