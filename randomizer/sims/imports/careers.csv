@@ -1,0 +1,67 @@
+career;pack;workplace;career_type
+Astronaut - Space Ranger;Basegame;Rabbithole;Full-time
+Astronaut - Interstellar Smuggler;Basegame;Rabbithole;Full-time
+Athlete - Professional Athlete;Basegame;Rabbithole;Full-time
+Athlete - Bodybuilder;Basegame;Rabbithole;Full-time
+Business - Management;Basegame;Rabbithole;Full-time
+Business - Investor;Basegame;Rabbithole;Full-time
+Criminal - Boss;Basegame;Rabbithole;Full-time
+Criminal - Oracle;Basegame;Rabbithole;Full-time
+Culinary - Chef;Basegame;Rabbithole;Full-time
+Culinary - Mixologist;Basegame;Rabbithole;Full-time
+Entertainer - Musician;Basegame;Rabbithole;Full-time
+Entertainer - Comedian;Basegame;Rabbithole;Full-time
+Freelancer - Digital Artist;Basegame;Home;Gigs
+Freelancer - Programmer;Basegame;Home;Gigs
+Freelancer - Writer;Basegame;Home;Gigs
+Freelancer - Fashion Photographer;Moschino Stuff;Home;Gigs
+Freelancer - Crafter;Eco Lifestyle;Home;Gigs
+Freelancer - Paranormal Investigator;Paranormal Stuff;Gigs;Gigs
+Painter - Master of the Real;Basegame;Rabbithole;Full-time
+Painter - Master of the Arts;Basegame;Rabbithole;Full-time
+Secret Agent - Diamond Agent;Basegame;Rabbithole;Full-time
+Secret Agent - Villain;Basegame;Rabbithole;Full-time
+Style Influencer - Trendsetter Branch;Basegame;Semi-active;Full-time
+Style Influencer - Stylist;Basegame;Semi-active;Full-time
+Tech Guru - eSport Gamer;Basegame;Rabbithole;Full-time
+Tech Guru - Start-up Entrepreneur;Basegame;Rabbithole;Full-time
+Writer - Author;Basegame;Rabbithole;Full-time
+Writer - Journalist;Basegame;Rabbithole;Full-time
+Detective;Get To Work;Active;Full-time
+Doctor;Get To Work;Active;Full-time
+Scientist;Get To Work;Active;Full-time
+Critic - Arts Critic;City Living;Semi-active;Full-time
+Critic - Food Critic;City Living;Semi-active;Full-time
+Politician - Politician;City Living;Semi-active;Full-time
+Politician - Charity Organizer;City Living;Semi-active;Full-time
+Social Media - Internet Personality;City Living;Semi-active;Full-time
+Social Media - Public Relations;City Living;Semi-active;Full-time
+Gardener - Botanist;Seasons;Semi-active;Full-time
+Gardener - Floral Designer;Seasons;Semi-active;Full-time
+Actor;Get Famous;Active;Gigs
+Conservationist - Environmental Manager;Island Living;Semi-active;Full-time
+Conservationist - Marine Biologist;Island Living;Semi-active;Full-time
+Education - Administrator;Discover University;Semi-active;Full-time
+Education - Professor;Discover University;Semi-active;Full-time
+Engineer - Computer Engineer;Discover University;Semi-active;Full-time
+Engineer - Mechanical Engineer;Discover University;Semi-active;Full-time
+Law - Judge;Discover University;Semi-active;Full-time
+Law - Private Attorney;Discover University;Semi-active;Full-time
+Civil Designer - Civic Planner;Eco Lifestyle;Semi-active;Full-time
+Civil Designer - Green Technician;Eco Lifestyle;Semi-active;Full-time
+Salaryperson - Expert;Snowy Escape;Semi-active;Full-time
+Salaryperson - Supervisor;Snowy Escape;Semi-active;Full-time
+Interior Decorator;Dream Home Decorator;Active;Gigs
+Babysitter;Basegame;Rabbithole;Part-time
+Barista;Basegame;Rabbithole;Part-time
+Fast Food Employee;Basegame;Rabbithole;Part-time
+Manual Laborer;Basegame;Rabbithole;Part-time
+Retail Employee;Basegame;Rabbithole;Part-time
+Diver;Island Living;Rabbithole;Part-time
+Fisherman;Island Living;Rabbithole;Part-time
+Lifeguard;Island Living;Rabbithole;Part-time
+Odd Jobs;Island Living;Rabbithole;Gigs
+Veterinary Clinic;Cats & Dogs;Owned Business;Flexible
+Retail Store;Get To Work;Owned Business;Flexible
+Restaurant;Dine Out;Owned Business;Flexible
+Self-Employed;Basegame;Home;Flexible

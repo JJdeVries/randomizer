@@ -1,0 +1,44 @@
+skill;pack;skill_type
+Charisma;Basegame;Major
+Comedy;Basegame;Major
+Cooking;Basegame;Major
+Fishing;Basegame;Major
+Fitness;Basegame;Major
+Gardening;Basegame;Major
+Gourmet Cooking;Basegame;Major
+Guitar;Basegame;Major
+Handiness;Basegame;Major
+Logic;Basegame;Major
+Mischief;Basegame;Major
+Mixology;Basegame;Major
+Painting;Basegame;Major
+Piano;Basegame;Major
+Photography;Basegame;Major
+Programming;Basegame;Major
+Rocket Science;Basegame;Major
+Video Gaming;Basegame;Major
+Violin;Basegame;Major
+Writing;Basegame;Major
+Herbalism;Outdoor Retreat;Major
+Baking;Get to Work;Major
+Wellness;Spa Day;Major
+DJ Mixing;Get Together;Major
+Singing;City Living;Major
+Parenting;Parenthood;Major
+Veterinary;Cats & Dogs;Major
+Flower Arranging;Seasons;Major
+Acting;Get Famous;Major
+Research & Debate;Discover University;Major
+Robotics;Discover University;Major
+Fabrication;Eco Living;Major
+Knitting;Nifty Knitting;Major
+Rock Climbing;Snowy Escape;Major
+Skiing;Snowy Escape;Major
+Snowboarding;Snowy Escape;Major
+Dancing;Get Together;Minor
+Bowling;Bowling Night Stuff;Minor
+Pet Training;Cats & Dogs;Minor
+Media Production;Get Famous;Minor
+Juice Fizzing;Eco Living;Minor
+Medium;Paranormal Stuff;Minor
+Cross Stitching;Cottage Living;Minor

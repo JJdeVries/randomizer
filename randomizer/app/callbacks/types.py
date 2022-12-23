@@ -1,13 +1,13 @@
 import dash
 import dash_bootstrap_components as dbc
-from randomizer import randomize
+from randomizer import randomize, sims
 
 from .. import ids
 
 _BUTTON_COUNTER = 0
 
 
-def _generate_button(random_type: randomize.Types) -> dbc.Col:
+def _generate_button(button_text: str, random_type: sims.Types) -> dbc.Col:
     global _BUTTON_COUNTER
 
     new_id = {
@@ -15,7 +15,6 @@ def _generate_button(random_type: randomize.Types) -> dbc.Col:
         "index": _BUTTON_COUNTER,
         "type": random_type,
     }
-    button_text = randomize.get(random_type)
 
     new_col = dbc.Col(
         [
@@ -43,48 +42,65 @@ def _generate_button(random_type: randomize.Types) -> dbc.Col:
     return new_col
 
 
-def _generate(nr: int, random_type: randomize.Types) -> list[dbc.Col]:
-    ret_val = []
-    for _ in range(nr):
-        ret_val.append(_generate_button(random_type))
-    return ret_val
-
-
 @dash.callback(
-    dash.Output(ids.GenerateId.TraitsOutput, "children"),
+    dash.Output(ids.GenerateId.TraitOutput, "children"),
     dash.Input(ids.GenerateId.Generate, "n_clicks"),
-    dash.State(ids.GenerateId.TraitsDropdown, "value"),
+    dash.State(ids.GenerateId.TraitDropdown, "value"),
 )
 def generate_traits(_generate_clicks: int, nr_values_str: str) -> list[dbc.Col]:
     nr_values = int(nr_values_str)
-    return _generate(nr_values, randomize.Types.Trait)
+    ret_list = []
+    for i in sims.pick(sims.Types.Trait, nr_values):
+        ret_list.append(_generate_button(i, sims.Types.Trait))
+    return ret_list
 
 
 @dash.callback(
-    dash.Output(ids.GenerateId.CareersOutput, "children"),
+    dash.Output(ids.GenerateId.CareerOutput, "children"),
     dash.Input(ids.GenerateId.Generate, "n_clicks"),
-    dash.State(ids.GenerateId.CareersDropdown, "value"),
+    dash.State(ids.GenerateId.CareerDropdown, "value"),
 )
 def generate_careers(_generate_clicks: int, nr_values_str: str) -> list[dbc.Col]:
     nr_values = int(nr_values_str)
-    return _generate(nr_values, randomize.Types.Career)
+    ret_list = []
+    for i in sims.pick(sims.Types.Career, nr_values):
+        ret_list.append(_generate_button(i, sims.Types.Career))
+    return ret_list
 
 
 @dash.callback(
-    dash.Output(ids.GenerateId.AspirationsOutput, "children"),
+    dash.Output(ids.GenerateId.AspirationOutput, "children"),
     dash.Input(ids.GenerateId.Generate, "n_clicks"),
-    dash.State(ids.GenerateId.AspirationsDropdown, "value"),
+    dash.State(ids.GenerateId.AspirationDropdown, "value"),
 )
 def generate_aspirations(_generate_clicks: int, nr_values_str: str) -> list[dbc.Col]:
     nr_values = int(nr_values_str)
-    return _generate(nr_values, randomize.Types.Aspiration)
+    ret_list = []
+    for i in sims.pick(sims.Types.Aspiration, nr_values):
+        ret_list.append(_generate_button(i, sims.Types.Aspiration))
+    return ret_list
 
 
 @dash.callback(
-    dash.Output(ids.GenerateId.SkillsOutput, "children"),
+    dash.Output(ids.GenerateId.SkillOutput, "children"),
     dash.Input(ids.GenerateId.Generate, "n_clicks"),
-    dash.State(ids.GenerateId.SkillsDropdown, "value"),
+    dash.State(ids.GenerateId.SkillDropdown, "value"),
 )
 def generate_skills(_generate_clicks: int, nr_values_str: str) -> list[dbc.Col]:
     nr_values = int(nr_values_str)
-    return _generate(nr_values, randomize.Types.Skill)
+    ret_list = []
+    for i in sims.pick(sims.Types.Skill, nr_values):
+        ret_list.append(_generate_button(i, sims.Types.Skill))
+    return ret_list
+
+
+@dash.callback(
+    dash.Output(ids.GenerateId.DeathOutput, "children"),
+    dash.Input(ids.GenerateId.Generate, "n_clicks"),
+    dash.State(ids.GenerateId.DeathCheck, "value"),
+)
+def generate_deaths(_generate_clicks: int, nr_values_str: str) -> list[dbc.Col]:
+    ret_list = []
+    for i in sims.pick(sims.Types.Skill, 1):
+        ret_list.append(_generate_button(i, sims.Types.Death))
+    return ret_list

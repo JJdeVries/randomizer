@@ -15,14 +15,17 @@ class GenerateId(_BaseDashId):
     OutputButton = "-output-button-"
     OutputTooltip = "-output-tooltip-"
 
-    TraitsOutput = "-traits-output-"
-    TraitsDropdown = "-traits-dropdown-"
+    TraitOutput = "-trait-output-"
+    TraitDropdown = "-trait-dropdown-"
 
-    CareersOutput = "-careers-output-"
-    CareersDropdown = "-careers-dropdown-"
+    CareerOutput = "-career-output-"
+    CareerDropdown = "-career-dropdown-"
 
-    AspirationsOutput = "-aspirations-output-"
-    AspirationsDropdown = "-aspirations-dropdown-"
+    AspirationOutput = "-aspiration-output-"
+    AspirationDropdown = "-aspiration-dropdown-"
 
-    SkillsOutput = "-skills-output-"
-    SkillsDropdown = "-skills-dropdown-"
+    SkillOutput = "-skill-output-"
+    SkillDropdown = "-skill-dropdown-"
+
+    DeathOutput = "-death-output-"
+    DeathCheck = "-death-checkbox-"

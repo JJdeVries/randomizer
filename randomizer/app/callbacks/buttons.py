@@ -1,5 +1,7 @@
+from typing import Any
+
 import dash
-from randomizer import randomize
+from randomizer import randomize, sims
 
 from .. import ids
 
@@ -14,26 +16,28 @@ from .. import ids
         "n_clicks",
     ),
     dash.State(
-        {"id": ids.GenerateId.OutputButton, "index": dash.MATCH, "type": dash.MATCH},
+        {"id": ids.GenerateId.OutputButton, "index": dash.ALL, "type": dash.MATCH},
         "children",
     ),
 )
-def generate_new(n_clicks: int, current):
+def generate_new(n_clicks: int, all_vals: list[str]) -> str | dash._callback.NoUpdate:
     # Let's maximize 10 tries to avoid deadlocks
     if not n_clicks or not dash.callback_context.triggered_id:
-        return current
+        return dash.no_update
 
-    new_value = ""
+    picking = ""
     for _ in range(10):
-        new_value = randomize.get(dash.callback_context.triggered_id["type"])
-        if new_value != current:
+        picking = sims.pick(sims.Types(dash.callback_context.triggered_id["type"]), 1)[
+            0
+        ]
+        if picking not in all_vals:
             break
-    return new_value
+    return picking
 
 
 @dash.callback(
     dash.Output({"id": ids.GenerateId.OutputTooltip, "index": dash.MATCH}, "children"),
     dash.Input({"id": ids.GenerateId.OutputButton, "index": dash.MATCH}, "children"),
 )
-def update_tooltip(new_tooltip: str):
+def update_tooltip(new_tooltip: str) -> str:
     return new_tooltip
