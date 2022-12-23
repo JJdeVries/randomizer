@@ -1,0 +1,5 @@
+.form-check-input:focus {
+  border-color: var(--bs-tertiary);
+  outline: 0;
+  box-shadow: 0 0 0 .25rem var(--bs-gray-200);
+}

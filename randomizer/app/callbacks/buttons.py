@@ -20,9 +20,11 @@ from .. import ids
         "children",
     ),
 )
-def generate_new(n_clicks: int, all_vals: list[str]) -> str | dash._callback.NoUpdate:
+def generate_new(
+    _btn_n_clicks: int, all_vals: list[str]
+) -> str | dash._callback.NoUpdate:
     # Let's maximize 10 tries to avoid deadlocks
-    if not n_clicks or not dash.callback_context.triggered_id:
+    if not dash.callback_context.triggered_id:
         return dash.no_update
 
     picking = ""

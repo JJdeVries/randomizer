@@ -1,4 +1,4 @@
-from . import aspirations, careers, deaths, skills, traits
+from . import aspirations, careers, deaths, skills, traits, worlds
 from .types import Types
 
 __all__ = ["Types", "traits", "careers"]
@@ -10,6 +10,7 @@ def initialize() -> None:
     aspirations.load()
     skills.load()
     deaths.load()
+    worlds.load()
 
 
 def pick(sims_type: Types, nr_choices: int) -> list[str]:
@@ -23,4 +24,6 @@ def pick(sims_type: Types, nr_choices: int) -> list[str]:
         return skills.pick(nr_choices)
     if sims_type is Types.Death:
         return deaths.pick(nr_choices)
+    if sims_type is Types.World:
+        return worlds.pick(nr_choices)
     return [""]

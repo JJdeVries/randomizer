@@ -32,14 +32,19 @@ def _get_dropdown(row_type: Types) -> dcc.Dropdown:
 
 def _get_checkbox(row_type: Types) -> dbc.Checklist:
     return dbc.Checklist(
+        id=_get_checkbox_id(row_type),
+        value=[1],
         options=[
             {
                 "label": "",
-                "value": "",
-            },
+                "value": 1,
+            }
         ],
-        value=[],
-        id=_get_checkbox_id(row_type),
+        input_checked_style={
+            "backgroundColor": "var(--bs-tertiary)",
+            "borderColor": "var(--bs-tertiary)",
+        },
+        style={"float": "right", "boxShadow": "0 0 0 .25rem var(--bs-gray-200);"},
     )
 
 
@@ -53,11 +58,8 @@ def _get_new_row(row_type: Types, add_dropdown: bool) -> dbc.Row:
                     else _get_checkbox(row_type),
                 ],
                 width=1,
-                align="center",
             ),
-            dbc.Col(
-                [html.B(row_type.capitalize())], width=2, style={"textAlign": "center"}
-            ),
+            dbc.Col([html.B(row_type.capitalize())], width=1),
             dbc.Col(
                 [
                     dbc.Container(
@@ -67,7 +69,6 @@ def _get_new_row(row_type: Types, add_dropdown: bool) -> dbc.Row:
             ),
         ],
         align="center",
-        justify="center",
         className="mb-3",
     )
 
@@ -114,6 +115,7 @@ def get_layout() -> html.Div:
                                         _get_new_row(Types.Skill, True),
                                         dbc.Row(dbc.Col(html.Br())),
                                         _get_new_row(Types.Death, False),
+                                        _get_new_row(Types.World, False),
                                     ],
                                     style={"margin": "1.5em"},
                                     fluid=True,

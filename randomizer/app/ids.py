@@ -29,3 +29,6 @@ class GenerateId(_BaseDashId):
 
     DeathOutput = "-death-output-"
     DeathCheck = "-death-checkbox-"
+
+    WorldOutput = "-world-output-"
+    WorldCheck = "-world-checkbox-"

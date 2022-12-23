@@ -7,3 +7,4 @@ class Types(str, enum.Enum):
     Aspiration = "aspiration"
     Skill = "skill"
     Death = "death"
+    World = "world"
