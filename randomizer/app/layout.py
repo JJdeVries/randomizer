@@ -7,17 +7,17 @@ from .ids import GenerateId
 
 
 def _get_dropdown_id(gen_type: Types) -> GenerateId:
-    dropid = f"-{gen_type}-dropdown-"
+    dropid = f"-{gen_type.value}-dropdown-"
     return GenerateId(dropid)
 
 
 def _get_output_id(gen_type: Types) -> GenerateId:
-    dropid = f"-{gen_type}-output-"
+    dropid = f"-{gen_type.value}-output-"
     return GenerateId(dropid)
 
 
 def _get_checkbox_id(gen_type: Types) -> GenerateId:
-    dropid = f"-{gen_type}-checkbox-"
+    dropid = f"-{gen_type.value}-checkbox-"
     return GenerateId(dropid)
 
 
