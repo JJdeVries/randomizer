@@ -1,5 +1,3 @@
-from typing import Any
-
 import dash
 from randomizer import randomize, sims
 
